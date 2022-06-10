@@ -1,0 +1,72 @@
+* {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.congratulation {
+   display: none;
+   margin-top: 2em;
+
+}
+
+.page-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.game-container {
+   text-align: center;
+   margin-top: 5em;
+}
+
+.rollbtn {
+   width: 150px;
+   height: 30px;
+   font-size: 25px;
+   border: none;
+   border-radius: 20px;
+   box-shadow: 4px 4px 4px orange;
+
+}
+
+.rollbtn:hover {
+   background: blue;
+   color: palevioletred;
+   border: none;
+}
+
+.dice {
+
+   font-size: 5rem;
+   color: red;
+   animation: roll 2s ease;
+}
+
+@keyframes roll {
+   from {
+       transform: rotate(0);
+       color: aqua;
+   }
+
+   to {
+       transform: rotate(360deg);
+       color: blue;
+   }
+}
+
+.dice-cont {
+   margin: 2em 2em 0 0;
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+
+.dice-cont i {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
